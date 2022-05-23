@@ -41,6 +41,10 @@ a:hover {
     display: none;
 }
 
+.hero_mobile {
+    display: block;
+}
+
 .menu_items_pages .features li {
     margin: 0;
     padding: 0.5em;
@@ -176,6 +180,7 @@ a:hover {
     line-height: 1.5;
     padding: 0em 1em;
     font-size: 20px !important; 
+    padding: 0em 1em;
 }
 
 .content button {
