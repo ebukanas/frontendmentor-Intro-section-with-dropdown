@@ -41,6 +41,38 @@ a:hover {
     display: none;
 }
 
+.menu_items_pages .features li {
+    margin: 0;
+    padding: 0.5em;
+}
+
+.menu_items_pages .features li img {
+    float: left;
+}
+
+.menu_items ul li a img {
+    margin-right: 1em;
+}
+
+.menu_items_pages .features {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: none;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: relative;
+    width: 130px;
+    display: none;
+}
+
+.company {
+    margin-left: 0 !important;
+    width: 100px !important;
+}
+
 .navbar .nav_mobile {
     display: flex;
     justify-content: space-between;
@@ -64,7 +96,7 @@ a:hover {
 }
 
 .show {
-    display: block;
+    display: block !important;
 }
 
 .menu_items {
@@ -105,16 +137,23 @@ a:hover {
     border: 2px solid var(--Almost-Black);
 }
 
-.menu_items .menu_items_pages li:nth-child(-n +2)::after {
+#dropdownArrow:after {
     content: "";
     background-image: url(images/icon-arrow-down.svg);
     position: absolute;
     width: 11px;
     height: 7px;
-    margin-left: 15px;
-    margin-top: 3px;
+    top: auto;
+    margin-left: 5px;
+    margin-top: 5px;
     cursor: pointer;
 }
+
+/* #features #features_title {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+} */
 
 .content {
     text-align: center;

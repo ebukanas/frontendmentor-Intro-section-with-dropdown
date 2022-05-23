@@ -32,6 +32,7 @@
     .sponsors {
         justify-content: space-between;
         margin-top: 4em;
+        padding: 0;
     }
 
     .sponsors img {
@@ -46,6 +47,7 @@
 
     .menu_items ul li {
         margin-left: 2em;
+        position: relative;
     }
 
     .menu_items .menu_items_pages li:nth-child(-n +2)::after {
@@ -83,5 +85,43 @@
     .hero_desktop {
         max-width: 100%;
         display: block;
+    }
+
+    #features:after, #company:after {
+        content: "";
+        background-image: url(images/icon-arrow-down.svg);
+        position: absolute;
+        width: 11px;
+        height: 7px;
+        top: 0;
+        cursor: pointer;
+    }
+
+    /* #features:after, #company:after {
+        content: "";
+        background-image: url(images/icon-arrow-down.svg);
+        position: absolute;
+        width: 11px;
+        height: 7px;
+        top: auto;
+        margin-left: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+    } */
+
+    .menu_items_pages .features {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0px 0px 18px 1px #00000040;
+        border-radius: 0.5em;
+        padding: 1em;
+        margin-top: 0px;
+        margin-left: 0px;
+        position: absolute;
+        width: 130px;
+        display: none;
+        margin-top: 1em;
+        margin-left: -72px;
     }
 }
