@@ -109,7 +109,7 @@ a:hover {
     right: 0;
     background-color: white;
     width: 65%;
-    margin-top: -1em;
+    margin-top: -2em;
     z-index: 2;
 }
 
@@ -145,8 +145,8 @@ a:hover {
     content: "";
     background-image: url(images/icon-arrow-down.svg);
     position: absolute;
-    width: 11px;
-    height: 7px;
+    width: 10px;
+    height: 6px;
     top: auto;
     margin-left: 5px;
     margin-top: 5px;
@@ -179,8 +179,7 @@ a:hover {
     color: var(--Medium-Gray);
     line-height: 1.5;
     padding: 0em 1em;
-    font-size: 20px !important; 
-    padding: 0em 1em;
+    font-size: 25px;
 }
 
 .content button {
