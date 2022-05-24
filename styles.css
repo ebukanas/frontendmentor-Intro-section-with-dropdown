@@ -95,6 +95,11 @@ a:hover {
     z-index: 3;
 }
 
+#close-menu {
+    z-index: 3;
+    cursor: pointer;
+}
+
 .hide {
     display: none;
 }
