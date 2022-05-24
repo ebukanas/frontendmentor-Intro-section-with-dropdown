@@ -4,6 +4,7 @@ var menuBtn = document.getElementById('menu')
 var menu = document.querySelector('.hide')
 var show = document.querySelector('.show');
 var body = document.querySelector('body')
+var menuItems = document.querySelector('.menu_items')
 
 var backgroundGradient = document.querySelector('.backgroundGradient')
 var closeMenu = document.getElementById('close-menu')
@@ -15,13 +16,19 @@ menuBtn.addEventListener('click', function() {
     
     closeMenu.classList.toggle('hide');
     menuBtn.classList.toggle('hide');
+
+    menuItems.classList.toggle('animation');
 })
 
+// when you click on the close menu icon
 closeMenu.addEventListener('click', function() {
     var menuDropdown = document.querySelector('.menu_items')
     menuDropdown.classList.toggle('hide');
     backgroundGradient.classList.toggle('show');
 
+    
+
+    //this part makes the previous open menu icon dissappear and turn into the cross
     if (menuBtn.classList.contains('hide')) {
         menuBtn.classList.remove('hide');
         closeMenu.classList.add('hide');
