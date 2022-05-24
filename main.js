@@ -7,32 +7,33 @@ var body = document.querySelector('body')
 var menuItems = document.querySelector('.menu_items')
 
 var backgroundGradient = document.querySelector('.backgroundGradient')
-var closeMenu = document.getElementById('close-menu')
+var closeMenuBtn = document.getElementById('close-menu')
 
 // when you click to expand the menu icon
 menuBtn.addEventListener('click', function() {
-    menu.classList.toggle('hide');
-    backgroundGradient.classList.toggle('show');
-    
-    closeMenu.classList.toggle('hide');
-    menuBtn.classList.toggle('hide');
 
+    menu.classList.remove('hide');
     menuItems.classList.toggle('animation');
+    backgroundGradient.classList.add('show');
+    
+    //swaps out the menu button
+    closeMenuBtn.classList.toggle('hide');
+    menuBtn.classList.toggle('hide');
 })
 
 // when you click on the close menu icon
-closeMenu.addEventListener('click', function() {
+closeMenuBtn.addEventListener('click', function() {
     var menuDropdown = document.querySelector('.menu_items')
-    menuDropdown.classList.toggle('hide');
-    backgroundGradient.classList.toggle('show');
-
+    menuItems.classList.toggle('animation');
     
+        backgroundGradient.classList.toggle('show');
+        menuDropdown.classList.toggle('hide');
 
-    //this part makes the previous open menu icon dissappear and turn into the cross
+//  this part makes the previous open menu icon dissappear and turn into the cross
     if (menuBtn.classList.contains('hide')) {
         menuBtn.classList.remove('hide');
-        closeMenu.classList.add('hide');
-    }
+        closeMenuBtn.classList.add('hide');
+    } 
 })
 
 

@@ -112,10 +112,11 @@ a:hover {
     height: 100vh;
     position: absolute;
     right: 0;
-    background-color: white;
     width: 65%;
+    background-color: white;
     margin-top: -2em;
     z-index: 2;
+    transition: transform 1s ease-in-out;
 }
 
 .menu_items ul {
@@ -145,6 +146,11 @@ a:hover {
 .menu_items .menu_items_login #register:hover {
     border: 2px solid var(--Almost-Black);
 }
+
+.menu_items.animation {
+    transform: translateX(0);
+}
+
 
 #dropdownArrow:after {
     content: "";
@@ -214,8 +220,3 @@ a:hover {
     align-self: center;
 }
 
-.animation {
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: linear;
-}
