@@ -90,7 +90,7 @@
         display: block;
     }
 
-    #features:after, #company:after {
+    /* #features:after, #company:after {
         content: "";
         background-image: url(images/icon-arrow-down.svg);
         position: absolute;
@@ -98,19 +98,8 @@
         height: 7px;
         top: 0;
         cursor: pointer;
-    }
-
-    /* #features:after, #company:after {
-        content: "";
-        background-image: url(images/icon-arrow-down.svg);
-        position: absolute;
-        width: 11px;
-        height: 7px;
-        top: auto;
-        margin-left: 5px;
-        margin-top: 5px;
-        cursor: pointer;
     } */
+
 
     .menu_items_pages .features {
         display: flex;

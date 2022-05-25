@@ -36,17 +36,28 @@ closeMenuBtn.addEventListener('click', function() {
     } 
 })
 
+var companyArrow = document.getElementsByClassName('dropdownArrow')
+var Dropdown = document.getElementsByClassName('features')
 
 // features button dropdown
-var featuresDropdown = document.querySelector('.features')
 var featuresBtn = document.getElementById('features')
-featuresBtn.addEventListener('mouseenter', function() {
-    featuresDropdown.classList.toggle('show');
+featuresBtn.addEventListener('click', function() {
+    Dropdown[0].classList.toggle('show');
+    // turns the dropdown arrow upside down
+        if (Dropdown[0].classList.contains('show')) {
+            companyArrow[0].classList.add('rotated');
+        } else {
+            companyArrow[0].classList.remove('rotated');
+        }
 })
 
+
 // company button dropdown
-var companyDropdown = document.querySelector('.company')
 var companyBtn = document.getElementById('company')
-companyBtn.addEventListener('mouseenter', function() {
-    companyDropdown.classList.toggle('show');
-})
+    companyBtn.addEventListener('click', function() {
+        Dropdown[1].classList.toggle('show');
+        companyArrow[1].classList.toggle('rotated');
+    })
+
+
+
